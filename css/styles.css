@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/particulas.gif");
+}
+
+.title {
+  font-size: 80px;
+  font-family: "Paytone One", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Paytone One", sans-serif;
+}
+
+.cool-link {
+  color: #0a0a0a !important;
+  transition: 0.3s;
+}
+
+.cool-link:hover {
+  color: #fff !important;
+  background-color: #0a0a0a;
+}
+
+.modern {
+  min-width: 294px;
+  height: 100vh;
+  padding: 0;
+}
+
+.modern::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 16em;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #0a0a0a;
+  z-index: -1;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+button:focus,
+button:active {
+  outline: 0px !important;
+}
+
+.content-center {
+  display: flex;
+  height: 82vh;
+  width: 100%;
+  align-content: center;
+  justify-content: left;
+  align-items: center;
+}
+
+.btn {
+  color: #e4e4e4;
+  background-color: #0a0a0a;
+  padding: 15px 25px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+a:focus,
+.btn:active,
+a:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.desc {
+  font-family: "Paytone One", sans-serif;
+  color: #727272 !important;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 10px;
+  }
+}

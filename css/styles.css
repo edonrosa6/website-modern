@@ -10,6 +10,7 @@ body {
 .title {
   font-size: 80px;
   font-family: "Paytone One", sans-serif;
+  color: #0a0a0a;
 }
 
 h1,
@@ -23,13 +24,29 @@ a {
 }
 
 .cool-link {
-  color: #0a0a0a !important;
-  transition: 0.3s;
+  display: block;
+  color: #fff !important;
+  position: relative;
 }
 
-.cool-link:hover {
-  color: #fff !important;
-  background-color: #0a0a0a;
+.navbar-toggler {
+  filter: invert(100%);
+}
+
+.cool-link::after {
+  content: "";
+  background: #fff;
+  mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.cool-link:hover::after {
+  height: calc(100% + 8px);
 }
 
 .modern {
@@ -66,14 +83,15 @@ button:active {
 }
 
 .btn {
-  color: #e4e4e4;
-  background-color: #0a0a0a;
+  color: #0a0a0a;
+  border: 2px solid #0a0a0a;
+  border-radius: 50px;
   padding: 15px 25px;
-  border-radius: 0;
 }
 
 .btn:hover {
   color: #fff;
+  background-color: #0a0a0a;
 }
 
 textarea:hover,
@@ -95,9 +113,17 @@ a:active,
 }
 
 .desc {
-  font-family: "Paytone One", sans-serif;
-  color: #727272 !important;
+  color: #0a0a0a !important;
+  font-size: 20px;
+}
+
+.descuento {
+  background-color: #0a0a0a;
+  color: #fff;
   font-size: 18px;
+  width: 130px;
+  text-align: center;
+  padding: 7px;
 }
 
 @media screen and (max-width: 768px) {

@@ -51,7 +51,6 @@ a {
 
 .modern {
   min-width: 294px;
-  height: 100vh;
   padding: 0;
 }
 
@@ -117,23 +116,83 @@ a:active,
   font-size: 20px;
 }
 
-.descuento {
+.box {
   background-color: #0a0a0a;
+  width: 125px;
+}
+
+.descuento {
   color: #fff;
   font-size: 18px;
-  width: 130px;
   text-align: center;
   padding: 7px;
 }
 
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 55px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 35px;
+    font-size: 40px;
   }
   .desc {
-    font-size: 12px;
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+
+  .descuento {
+    font-size: 20px;
+  }
+
+  img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 14px;
+    text-align: center;
   }
   .btn {
     font-size: 10px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .boton {
+    width: 125px;
+    margin: auto;
+  }
+
+  .descuento {
+    font-size: 12px;
+    text-align: center;
+  }
+  .box {
+    width: 125px;
+    background-color: #0a0a0a;
+    margin: auto;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img {
+    width: 70%;
+    display: block;
+    margin: auto;
   }
 }
